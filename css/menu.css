@@ -35,6 +35,9 @@
 }
 
 .menu__list {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
     height: 100%;
     padding-left: 24px;
 }
@@ -42,7 +45,6 @@
 .menu__link {
     text-decoration: none;
     color: black;
-    padding-bottom: 24px;
     position: relative;
     display: flex;
     align-items: center;
