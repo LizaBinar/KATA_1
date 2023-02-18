@@ -1,0 +1,139 @@
+.header {
+    display: flex;
+    flex-direction: row;
+}
+
+.header__laptop-page {
+    display: none;
+}
+
+.header__nav {
+    width: 100vw;
+    padding: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+}
+
+.header__left-list {
+    display: flex;
+    flex-wrap: nowrap;
+    align-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.header__right-nav {
+    display: flex;
+    gap: 32px;
+}
+
+.connects-nav__list {
+    display: flex;
+    flex-wrap: nowrap;
+    align-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.header__connects-nav {
+    display: none;
+}
+
+.header__logo {
+    position: relative;
+}
+
+.header__logo:after {
+    content: "";
+    width: 2px;
+    height: 32px;
+    border-radius: 1px;
+    background: #EAEAEA;
+    position: absolute;
+    left: 112px;
+    margin-top: 10px;
+}
+
+.tools-nav {
+    position: relative;
+}
+
+.tools-nav__list {
+    display: flex;
+    gap: 16px;
+}
+
+.multi-button {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    cursor: pointer;
+}
+
+.multi-button__title {
+    display: none;
+}
+
+@media screen and (min-width: 768px) {
+    .header__logo {
+        margin-left: 16px;
+    }
+
+    .header__connects-nav {
+        display: block;
+    }
+
+    .header__logo:before {
+        content: "";
+        width: 2px;
+        height: 32px;
+        border-radius: 1px;
+        background: #EAEAEA;
+        position: absolute;
+        left: -16px;
+        margin-top: 10px;
+    }
+
+    .header__logo:after {
+        display: none;
+    }
+
+    .tools-nav:before {
+        content: "";
+        width: 2px;
+        height: 32px;
+        border-radius: 1px;
+        background: #EAEAEA;
+        position: absolute;
+        left: -16px;
+        margin-top: 6px;
+    }
+}
+
+@media screen and (min-width: 1023px) {
+    .header__left-list {
+        display: none;
+    }
+
+    .multi-button__title {
+        display: block;
+    }
+
+    .header__nav {
+        display: none;
+    }
+
+    .tools-nav:before {
+        display: none;
+    }
+
+    .header__laptop-page {
+        margin-top: 30px;
+        padding-right: 24px;
+        display: flex;
+        justify-content: space-between;
+        width: 100vw;
+    }
+}
