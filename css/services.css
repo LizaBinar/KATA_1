@@ -1,0 +1,121 @@
+.services {
+    width: 100vw;
+    min-height: 56px;
+    align-items: center;
+}
+
+.services__title {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    padding: 16px;
+    background-color: #fafafa;
+    border-top: 1px solid #D9FFF5;
+}
+
+.services__brands {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 24px 0 24px 24px;
+}
+
+.services__brand {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 210px;
+    height: 72px;
+
+    padding: 8px;
+    background: #FFFFFF;
+    border: 1px solid #EAEAEA;
+    border-radius: 6px;
+}
+
+.services__brands_list {
+    display: flex;
+    gap: 16px;
+}
+
+.brand-button {
+    color: #FF3E79;
+    width: 40px;
+    height: 40px;
+}
+
+.services__button-expand{
+    max-width: 200px;
+    display: none !important;
+}
+
+.swiper-slide {
+    animation: 1s show ease;
+    transition-duration: 1s;
+}
+
+@keyframes show {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@media screen and (min-width: 768px){
+    .swiper-slide {
+        width: 224px !important;
+    }
+    .element:nth-child(n+7) {
+        display: none;
+    }
+    .services__title {
+        padding-left: 28px;
+    }
+    .services__button-expand{
+        display: flex !important;
+    }
+}
+
+@media screen and (min-width: 1012px){
+    .swiper-slide:nth-child(n - 9) {
+        display: flex;
+    }
+    .element:nth-child(n + 9) {
+        display: none;
+    }
+}
+
+
+
+@media screen and (min-width: 1120px) {
+    .swiper-slide {
+        width: 240px !important;
+    }
+}
+
+@media screen and (min-width: 1253px) {
+    .element:nth-child(n + 11) {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1344px) {
+    .swiper-slide:nth-child(n - 11) {
+        display: flex;
+    }
+
+    .element:nth-child(n + 11) {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1608px) {
+    .swiper-slide:nth-child(n) {
+        display: flex;
+    }
+    .services__button-expand {
+        display: none;
+    }
+    .services__button-expand{
+        display: none !important;
+    }
+}

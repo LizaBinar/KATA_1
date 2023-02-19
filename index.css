@@ -2,12 +2,17 @@
 @import url("css/main.css");
 @import url("css/menu.css");
 @import url("css/reset.css");
+@import url("css/services.css");
+@import url("css/swiper.css");
 
 @import url("fonts/fonts.css");
 
 
-* {
+html {
     box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
 }
 
 .body-page {
@@ -37,4 +42,14 @@
     box-shadow: 0 0 50px 10px #FD3E78;
 
     transition: 0.2s;
+}
+
+.button-expand {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.button-expand__svg {
+    transition-duration: 0.4s;
 }
