@@ -1,8 +1,10 @@
 const initMobileSwiper = function () {
     const swiper = new Swiper(".mySwiper", {
         slidesPerView: 1.17,
+        loop: true,
         pagination: {
             el: ".swiper-pagination",
+            clickable: true
         },
         breakpoints: {
             360: {

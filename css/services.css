@@ -60,6 +60,18 @@
     to { opacity: 1; }
 }
 
+.services__button-brand {
+    border-radius: 20px;
+    transition-duration: 0.4s;
+}
+
+.services__button-brand:hover {
+    background-color: rgb(255 62 121 / 27%);
+    box-shadow: 0 0 30px 0 rgb(251, 62, 119);
+
+    transform: scale(1.1);
+}
+
 @media screen and (min-width: 768px){
     .swiper-slide {
         width: 224px !important;
