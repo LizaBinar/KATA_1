@@ -9,14 +9,14 @@ button.onclick = () => {
         buttonText.textContent = "Скрыть"
         buttonImg.style.transform = "rotate(180deg)"
         for (let i = 0; i < elements.length; i++) {
-            elements[i].classList.remove("element")
+            elements[i].classList.remove("services__element")
         }
     } else {
         button.dataset.click = "false";
         buttonText.textContent = "Показать все"
         buttonImg.style.transform = " rotate(0deg)"
         for (let i = 0; i < elements.length; i++) {
-            elements[i].classList.add("element")
+            elements[i].classList.add("services__element")
         }
     }
     console.log(button.textContent)

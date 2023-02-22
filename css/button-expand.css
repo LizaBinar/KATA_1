@@ -1,0 +1,10 @@
+.button-expand {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    max-width: 200px;
+}
+
+.button-expand__svg {
+    transition-duration: 0.4s;
+}

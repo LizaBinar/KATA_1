@@ -1,11 +1,25 @@
 @import url("css/header.css");
-@import url("css/main.css");
+@import url("css/main-page.css");
 @import url("css/menu.css");
 @import url("css/reset.css");
 @import url("css/services.css");
 @import url("css/swiper.css");
+@import url("css/base-button.css");
+@import url("css/connects-nav.css");
+@import url("css/tools-nav.css");
+@import url("css/multi-botton.css");
+@import url("css/title.css");
+@import url("css/nav-page.css");
+@import url("css/post.css");
+@import url("css/body-page.css");
+@import url("css/aside.css");
+@import url("css/address.css");
+@import url("css/mail.css");
+@import url("css/tel.css");
+@import url("css/language-selection.css");
+@import url("css/button-expand.css");
 
-@import url("fonts/fonts.css");
+@import url("css/fonts.css");
 
 
 html {
@@ -13,43 +27,4 @@ html {
 }
 *, *:before, *:after {
     box-sizing: inherit;
-}
-
-.body-page {
-    background-color: #f6f6f6;
-    font-family: "TT Lakes", "Arial", serif;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-.base-button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    width: 40px;
-    height: 40px;
-    border-radius: 20px;
-
-    cursor: pointer;
-    background-color: #FF3E79;
-}
-
-.base-button:hover {
-    opacity: 0.9;
-    -webkit-box-shadow: 0 0 50px 10px #FD3E78;
-    box-shadow: 0 0 50px 10px #FD3E78;
-
-    transition: 0.2s;
-}
-
-.button-expand {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-}
-
-.button-expand__svg {
-    transition-duration: 0.4s;
 }

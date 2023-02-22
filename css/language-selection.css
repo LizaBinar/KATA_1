@@ -1,0 +1,15 @@
+.language-selection__list {
+    margin-top: 24px;
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    transition-duration: 0.3s;
+}
+
+.language-selection__button:hover {
+    transform: scale(1.2);
+}
+
+.language-selection__button--active {
+    color: #7d7d81;
+}

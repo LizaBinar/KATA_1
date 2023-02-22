@@ -1,0 +1,22 @@
+.base-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+
+    cursor: pointer;
+    background-color: #FF3E79;
+
+    transition-duration: 0.2s;
+}
+
+.base-button:hover {
+    opacity: 0.9;
+    -webkit-box-shadow: 0 0 50px 10px #FD3E78;
+    box-shadow: 0 0 50px 10px #FD3E78;
+    transform: scale(1.1);
+    transition: 0.2s;
+}

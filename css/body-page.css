@@ -1,0 +1,7 @@
+.body-page {
+    background-color: #f6f6f6;
+    font-family: "TT Lakes", "Arial", serif;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}

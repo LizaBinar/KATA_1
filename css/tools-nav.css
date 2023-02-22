@@ -1,0 +1,27 @@
+.tools-nav {
+    position: relative;
+}
+
+.tools-nav__list {
+    display: flex;
+    gap: 16px;
+}
+
+@media screen and (min-width: 768px) {
+    .tools-nav:before {
+        content: "";
+        width: 2px;
+        height: 32px;
+        border-radius: 1px;
+        background: #EAEAEA;
+        position: absolute;
+        left: -16px;
+        margin-top: 6px;
+    }
+}
+
+@media screen and (min-width: 1023px) {
+    .tools-nav:before {
+        display: none;
+    }
+}

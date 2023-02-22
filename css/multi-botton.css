@@ -1,0 +1,16 @@
+.multi-button {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    cursor: pointer;
+}
+
+.multi-button__title {
+    display: none;
+}
+
+@media screen and (min-width: 1023px) {
+    .multi-button__title {
+        display: block;
+    }
+}
